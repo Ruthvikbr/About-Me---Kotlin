@@ -3,4 +3,5 @@
     <dimen name="text_size">20sp</dimen>
     <dimen name="layout_margin">16dp</dimen>
     <dimen name="nameTv_padding">8dp</dimen>
+    <dimen name="padding_sides">16dp</dimen>
 </resources>
