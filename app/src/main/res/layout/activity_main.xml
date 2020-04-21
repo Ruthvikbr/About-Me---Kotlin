@@ -3,6 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     >
+    
+    <data>
+        <variable
+            name="myName"
+            type="com.diceroller.aboutme.MyName" />
+    </data>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
     android:layout_width="match_parent"
@@ -17,7 +23,7 @@
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/name"
+        android:text="@={myName.name}"
         android:textAlignment="center" />
 
     <EditText
@@ -50,7 +56,9 @@
         style="@style/NameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        tools:visibility="gone" />
+        tools:visibility="gone"
+        android:text="@={myName.nickName}"
+        />
 
     <ScrollView
         android:id="@+id/bio_scroll"
